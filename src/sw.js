@@ -1,4 +1,4 @@
-var CACHE_NAME = '2021-11-06 12:45';
+var CACHE_NAME = '2022-03-15 00:05';
 var urlsToCache = [
   "/asmr-english-words/",
   "/asmr-english-words/data/0.tsv",
