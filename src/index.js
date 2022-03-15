@@ -70,15 +70,15 @@ function getRandomInt(min, max) {
 
 function initProblems() {
   const grade = document.getElementById("grade").selectedIndex;
-  fetch("data/" + grade + ".tsv").then((response) => response.text()).then(
-    (tsv) => {
+  fetch("data/" + grade + ".tsv")
+    .then((response) => response.text())
+    .then((tsv) => {
       problems = [];
       tsv.trim().split("\n").forEach((line) => {
         const [en, ja] = line.split("\t");
         problems.push([en, ja]);
       });
-    },
-  );
+    });
 }
 initProblems();
 
