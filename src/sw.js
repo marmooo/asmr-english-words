@@ -1,4 +1,4 @@
-var CACHE_NAME = '2022-04-08 08:40';
+var CACHE_NAME = '2022-04-26 00:05';
 var urlsToCache = [
   "/asmr-english-words/",
   "/asmr-english-words/data/0.tsv",
@@ -9,7 +9,7 @@ var urlsToCache = [
   "/asmr-english-words/data/5.tsv",
   "/asmr-english-words/data/6.tsv",
   "/asmr-english-words/index.js",
-  "/asmr-english-words/favicon/original.svg",
+  "/asmr-english-words/favicon/favicon.svg",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",
 ];
 
