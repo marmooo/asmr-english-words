@@ -1,4 +1,4 @@
-var CACHE_NAME = "2022-06-05 09:25";
+var CACHE_NAME = "2022-07-24 00:46";
 var urlsToCache = [
   "/asmr-english-words/",
   "/asmr-english-words/index.js",
@@ -10,7 +10,7 @@ var urlsToCache = [
   "/asmr-english-words/data/5.tsv",
   "/asmr-english-words/data/6.tsv",
   "/asmr-english-words/favicon/favicon.svg",
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css",
 ];
 
 self.addEventListener("install", function (event) {
