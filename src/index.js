@@ -101,17 +101,15 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-function initProblems() {
+async function initProblems() {
   const grade = document.getElementById("grade").selectedIndex;
-  fetch("data/" + grade + ".tsv")
-    .then((response) => response.text())
-    .then((tsv) => {
-      problems = [];
-      tsv.trim().split("\n").forEach((line) => {
-        const [en, ja] = line.split("\t");
-        problems.push([en, ja]);
-      });
-    });
+  const response = await fetch("data/" + grade + ".tsv");
+  const tsv = await response.text();
+  problems = [];
+  tsv.trim().split("\n").forEach((line) => {
+    const [en, ja] = line.split("\t");
+    problems.push([en, ja]);
+  });
 }
 
 function respeak() {
@@ -175,7 +173,7 @@ function speakAnswer() {
   speak(problem[1], "ja-JP");
 }
 
-initProblems();
+await initProblems();
 document.getElementById("toggleDarkMode").onclick = toggleDarkMode;
 document.getElementById("startButton").onclick = startASMR;
 document.getElementById("stopButton").onclick = stopASMR;
